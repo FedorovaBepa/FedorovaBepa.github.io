@@ -1,6 +1,56 @@
 <html>
-  <head>
-   <!-- теги заголовка-->
-  </head>
-  <body><!-- теги текста--></body>
+
+<head>
+  <!-- теги заголовка-->
+  <title>Изучаем HTML</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="до 160 симвлов">
+  <meta name="keywords" content="">
+</head>
+
+<body>
+  <!-- теги текста-->
+  <h1 align="center">Заголовки</h1>
+  <h6 id="elem">Заголовки</h6>
+  <p align="right">Абзац</p>
+  <pre> Абзац с сохранением форматирования</pre>
+  <blockquote>Цитата</blockquote>
+  <q>Короткая цитата</q>
+  <ul type="circle">
+    <! --тип задает вид маркеров для списка , a-буквы, i-римские цифры, можно указывать отдельно для li-->
+      <li> Элемент списка 1</li>
+      <li> Элемент списка 2</li>
+      <li> Элемент списка 3</li>
+  </ul>
+  <ol start="10" type="1" reversed>
+    <li> Элемент списка 1</li>
+    <li> Элемент списка 2</li>
+    <li> Элемент списка 3</li>
+  </ol>
+  <b>Жирный текст</b>
+  <strong>Текст, который видно в режиме для плоховидящих, <p>т.е его при <b>озвучивании</b> будут </p>выделять
+    интонацией</strong>
+  <br>
+  <i>Курсив</i>
+  <em>Курсив, семантический</em>
+  <br>
+  <img src="html.png" alt="Error" height="100" width="100">
+  <a href="https://vk.com/club187706272">Ссылка на группу</a>
+  <a href="#elem" download> Скачать картинку</a>
+  <table border="2", bordercolor="green">
+    <caption>Заголовок таблицы</caption>
+    <tbody>
+      <tr>
+        <th>№</th>
+        <th>ФИО</th>
+    
+      <tr>
+        <td>Ячейка1</td>
+        <td>Ячейка2</td>
+      </tr>
+      <tr colspan="2">Итого:</tr>
+      <tr rowspan="2><td>1</td><td>2</td></tr>
+    </tr>
+  </tbody>
+</body>
 </html>
