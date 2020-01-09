@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Simon</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <h1>Позаботьтесь о Саймоне</h1>
+    </header>
+
+    <div class="container">
+        <div id="intro">
+            <img id="introImage" src="img/welcome.gif">
+            <audio src="audio/main.mp3" autoplay="autoplay"></audio>
+        </div>
+
+
+        <div class="settings" id="settings">
+            <img src="img/close.png" onclick="closeSettings()">
+            <h1>НАСТРОЙКИ</h1>
+
+            <div id="app">
+                <label>
+                    Выберите скорость:
+                    <br>
+                    <input type="range" max=10 min=1 v-bind:value="speed" v-on:input="speed = $event.target.value">
+                    <br>
+                    <div id="speed">{{speed}}</div>
+                </label>
+            </div>
+
+        </div>
+        <div class="controls">
+            <button id="start" onclick="Start()"><img src="img/start.png"></button>
+            <button id="pause" onclick="pause()"><img src="img/pause.png"></button>
+            <button id="settings" onclick="openSettings()"><img src="img/settings.png"></button>
+
+
+        </div>
+        <div class="stats">
+
+            Сытость:
+            <div id="hunger" class="bar">100%</div>
+
+            Гигиена: <div id="hygiene" class="bar">100%</div>
+            Сон: <div id="rest" class="bar">100%</div>
+            Настроение: <div id="mood" class="bar">100%</div>
+        </div>
+
+        <div class="egg">
+            <img id="tamaEgg" src="img/tama23.png">
+
+            <div id="blockImage">
+                <img src="img/tenor.gif" id="pet" alt="image">
+            </div>
+
+            <div id="blockButtons">
+                <button class="buttons" id="feedButton" onclick="feed()"><img class="imageButtons"
+                        src="img/feed.png"></button>
+                <button class="buttons" id="sleepButton" onclick="sleep()"><img class="imageButtons"
+                        src="img/sleep.png"></button>
+                <button class="buttons" id="playButton" onclick="play()"><img class="imageButtons"
+                        src="img/reddot.png"></button>
+                <button class="buttons" id="cleanButton" onclick="clean()"><img class="imageButtons"
+                        src="img/poo.png"></button>
+
+            </div>
+
+
+        </div>
+        <div class="window">
+            <img src="img/msg.png">
+            <div id="message"></div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+   
+}
+#intro {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: white;
+  padding: 15%;
+  z-index: 10;
+}
+
+
+.container {
+position: absolute;
+border: 5px solid black;
+padding: 2%;
+margin: 0 25%;
+width: 800px;
+min-height: 850px;
+overflow: hidden;
+background: url(../img/background7-1.jpg);
+background-size: 100%;
+}
+#tamaEgg {
+  position: relative;
+    top: 0;
+    width: 100%;    
+    right: 0;
+    left: 0;  
+  z-index: 2;
+}
+.egg {
+  position: absolute;  
+  margin: 0 auto;
+  /* margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;    */
+  }
+
+  #blockImage{
+    position: absolute;
+    padding: 1%;
+    top: 35%;
+    overflow: hidden; 
+    height: 35%;
+    left: 32%;
+    right: 32%;    
+    bottom: 40%;
+    background: white;
+    
+    
+    /* */
+   
+  }
+  #blockImage img{  
+    background: white; 
+    width: 200px;
+    height: 200px;
+    
+    
+  }
+
+  #blockButtons {   
+    z-index: 7;
+    
+    margin-left: 30%; 
+    margin-right: 20%; 
+    align-content: center;
+    
+}
+.buttons{
+  background: none;
+  cursor: pointer; 
+  background: beige;
+  border: 2px solid crimson;
+  border-radius: 33px;
+  margin: 1%;
+  z-index: 8;
+}
+
+.buttons:hover{
+  background:lightblue;
+}
+
+.buttons:active{
+  background: rgb(117, 187, 245);
+}
+.imageButtons{
+  z-index: 8;  
+  max-width: 50px;
+  height: 50px;
+   
+} 
+ 
+.controls {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  max-height: 5%; 
+  z-index: 10;
+}
+.controls img {
+  max-width: 50px; 
+}
+  .bar{
+    width: 100px;
+    background: #99FF33;
+    margin: 5px 10px;
+    border: 2px solid gray;
+    border-radius:4px;
+    padding: 3px 3px;
+   
+  }
+  
+  .stats{
+    float:left;
+    padding: 10px;
+    width: 21%;
+    background: beige;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: rgb(41, 39, 39);
+  }
+    
+  
+  #message{
+    color: red;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    font-size: 2em;
+       
+  }
+  .window img{   
+    position: absolute; 
+    width: 20%;
+    height: 100%;
+    bottom: 0;
+    left: 15%;
+  }
+  .window{   
+    position: absolute; 
+    width: 80%;
+    height: 10%;
+    bottom: 0;
+    margin: 2%;
+  }
+
+  .settings{   
+    position: absolute; 
+    border: 3px solid gray;
+   left: 10%;
+   right: 10%;
+    bottom: 10%;
+    top:10%;
+    font-size: 1.5em;
+    background: whitesmoke;
+    visibility: hidden;
+    z-index: 11;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .settings h1 {
+    color: crimson;
+    font-style: italic;
+    text-align: center;
+  }
+  .settings img {
+    width: 5%;
+    float: right;
+  }
+  #speed {
+    border: crimson 1px solid;
+    width: 5%;
+    background: white;
+    margin-left: 45%;
+  }
